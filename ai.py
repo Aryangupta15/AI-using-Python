@@ -21,11 +21,11 @@ def speak(audio):
 def wishme():
     hour = int(datetime.datetime.now().hour)
     if hour>=0 and hour<=12:
-        speak("Good morning, Aaryan sir")
+        speak("Good morning, Aaryan")
     elif hour>12 and hour<=18:
-        speak("Good afternoon, Aaryan sir")
+        speak("Good afternoon, Aaryan")
     else:
-        speak("Good evening, Aaryan sir")
+        speak("Good evening, Aaryan")
 
 def getSpeech():
     r = SR.Recognizer()  
@@ -61,7 +61,7 @@ if __name__ == "__main__":
             speak("My name is XEON, and iam a desktop assistant, iam programmed in python, im still in development and my developers is addidng more nerves in me, and aiming to become best bot!")
         
         elif "who created you" in query:
-            speak("i was created by Aaryan Gupta, an computer science engineer")
+            speak("i was created by Aaryan Gupta, an computer science engineer for knowing must please visit Aj_Aryan09")
 
         elif "tell me about" in query:
             speak("ok, let me remember...")
